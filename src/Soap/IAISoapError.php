@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Soap;
+namespace lewczyk\iai\src\Soap;
 
 class IAISoapError{
     private $faultCode;

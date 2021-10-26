@@ -1,10 +1,10 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Soap;
+namespace lewczyk\iai\src\Soap;
 
-use Lewczyk\IAIShopBundle\Parameters\IAIParam;
-use Lewczyk\IAIShopBundle\Soap\IAISoapError;
-use Lewczyk\IAIShopBundle\Authentication\IAIShopAuthentication;
+use lewczyk\iai\src\Parameters\IAIParam;
+use lewczyk\iai\src\Soap\IAISoapError;
+use lewczyk\iai\src\Authentication\IAIShopAuthentication;
 
 /**
  * 
