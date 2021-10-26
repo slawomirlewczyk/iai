@@ -1,11 +1,11 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Parameters;
+namespace lewczyk\iai\src\Parameters;
 
-use Lewczyk\IAIShopBundle\Parameters\ParameterManager;
-use Lewczyk\IAIShopBundle\Parameters\SimpleIAIParameter;
-use Lewczyk\IAIShopBundle\Parameters\ArrayIAIParameter;
-use Lewczyk\IAIShopBundle\Parameters\ExtendedArrayIAIParameter;
+use lewczyk\iai\src\Parameters\ParameterManager;
+use lewczyk\iai\src\Parameters\SimpleIAIParameter;
+use lewczyk\iai\src\Parameters\ArrayIAIParameter;
+use lewczyk\iai\src\Parameters\ExtendedArrayIAIParameter;
 
 /**
  * Setting parameters for api calls

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Authentication;
+namespace lewczyk\iai\src\Authentication;
 
 /**
  * Singleton for iai-shop connection data

@@ -1,10 +1,10 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Classes;
+namespace lewczyk\iai\src\Classes;
 
-use Lewczyk\IAIShopBundle\Soap\IAISoapClient;
-use Lewczyk\IAIShopBundle\Authentication\IAIShopAuthentication;
-use Lewczyk\IAIShopBundle\Parameters\IAIParam;
+use lewczyk\iai\src\Soap\IAISoapClient;
+use lewczyk\iai\src\Authentication\IAIShopAuthentication;
+use lewczyk\iai\src\Parameters\IAIParam;
 
 class IAIShopApiClient implements IAIShopApiClientInterface 
 {

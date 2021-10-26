@@ -1,8 +1,8 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Parameters;
+namespace lewczyk\iai\src\Parameters;
 
-use Lewczyk\IAIShopBundle\Parameters\SoapParameter;
+use lewczyk\iai\src\Parameters\SoapParameter;
 
 class ParameterManager extends SoapParameter{
     private static $instance;

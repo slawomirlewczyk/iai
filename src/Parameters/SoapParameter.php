@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Parameters;
+namespace lewczyk\iai\src\Parameters;
 
 abstract class SoapParameter{
     protected $params = array();

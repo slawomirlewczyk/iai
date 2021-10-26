@@ -1,8 +1,8 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Parameters;
+namespace lewczyk\iai\src\Parameters;
 
-use Lewczyk\IAIShopBundle\Parameters\SoapParameter;
+use lewczyk\iai\src\Parameters\SoapParameter;
 
 /**
  * Trzeba zrobić test czy jest $values[1](jeśli nie jest to nie robimy pętli, $this->param[$paramName][$values[2]] = $values[1];)  i $values[2] tablicą i obsłużyć różne długości tablicy
