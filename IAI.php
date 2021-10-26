@@ -32,9 +32,9 @@ class IAI implements IAIShopApiClientInterface
     private $method;
 
     function __construct(
+        string $shop,
         string $login,
-        string $password,
-        string $shop
+        string $password
     ) {
         $this->login = $login;
         $this->password = $password;
