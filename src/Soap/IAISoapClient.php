@@ -54,7 +54,7 @@ class IAISoapClient{
             $this->setRequest();
             $this->setResponse();
             $this->setResultNumberPage();
-            $this->resetParams();
+            //$this->resetParams();
             return $this->getResponses();
         }
         catch(\SoapFault $e){
