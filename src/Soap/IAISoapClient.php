@@ -122,10 +122,10 @@ class IAISoapClient{
     }
     private function setPage($page) {
         if($this->params->hasParam('results_page')){
-            $this->params->results_page($this->params::SIMPLE, $page); 
+            $this->params->results_page($page);
         }
         if($this->params->hasParam('resultsPage')){
-            $this->params->resultsPage($this->params::SIMPLE, $page);
+            $this->params->resultsPage($page);
         } 
     }
     private function setResultNumberPage(){
