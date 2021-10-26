@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewczyk\IAIShopBundle\Classes;
+namespace lewczyk\iai\src\Classes;
 
 interface IAIShopApiClientInterface{
     
