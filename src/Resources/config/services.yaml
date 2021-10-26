@@ -1,0 +1,5 @@
+services:
+    iai_shop_soap_client:
+        class: 'Lewczyk\IAIShopBundle\Soap\IAISoapClient'
+    iai_shop_soap_param:
+        class: 'Lewczyk\IAIShopBundle\Parameters\IAIParam'
