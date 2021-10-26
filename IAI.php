@@ -8,7 +8,7 @@ use lewczyk\iai\src\Parameters\IAIParam;
 use lewczyk\iai\src\Classes\IAIShopApiClientInterface;
 
 /**
- * This is just an example.
+ * 
  */
 class IAI implements IAIShopApiClientInterface
 {

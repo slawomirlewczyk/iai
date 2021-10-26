@@ -27,9 +27,11 @@ class ParameterManager extends SoapParameter{
     public function getParams(){
         return $this->paramToArray();
     }
+
     public function hasParam($paramName){
-        return isset($this->params[$paramName]);
+        return isset($this->getParams()[$paramName]);
     }
+
     public function resetParams(){
         return $this->params = array();
     }
