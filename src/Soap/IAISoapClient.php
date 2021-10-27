@@ -69,7 +69,7 @@ class IAISoapClient{
             return $this->params->$method_name();
         }
     }
-    private function resetParams(){
+    public function resetParams(){
         $this->params->resetParams();
     }
     /**
@@ -93,6 +93,10 @@ class IAISoapClient{
     }
     private function setResponse(){
         try{
+            //echo "<pre>test ";
+            $this->request['update']['params']['products'][0]['productIndex'] = 9622;
+            //print_r($this->request);
+            //die;
             $this->response = $this->client->__call($this->apiMethod, $this->request);
         }
         catch(\SoapFault $fault){
