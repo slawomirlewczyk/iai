@@ -32,13 +32,18 @@ class ExtendedArrayIAIParameter extends SoapParameter{
         }
         else{
             foreach($values as $key => $v){
-                if(count($values[$key]) > 1){
-                    foreach($v as $value){
-                        $this->param[$paramName][][$key] = $value;
+                if(is_array($values[$key])){
+                    if(count($values[$key]) > 1){
+                        foreach($v as $value){
+                            $this->param[$paramName][][$key] = $value;
+                        }
+                    }
+                    else{
+                        $this->param[$paramName][][$key] = $values[$key][0];
                     }
                 }
                 else{
-                    $this->param[$paramName][][$key] = $values[$key][0];
+                    $this->param[$paramName][][$key] = $values[$key];
                 }
             }
         }
