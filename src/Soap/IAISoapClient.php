@@ -93,10 +93,6 @@ class IAISoapClient{
     }
     private function setResponse(){
         try{
-            //echo "<pre>test ";
-            $this->request['update']['params']['products'][0]['productIndex'] = 9622;
-            //print_r($this->request);
-            //die;
             $this->response = $this->client->__call($this->apiMethod, $this->request);
         }
         catch(\SoapFault $fault){
