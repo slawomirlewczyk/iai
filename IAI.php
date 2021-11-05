@@ -12,24 +12,15 @@ use lewczyk\iai\src\Classes\IAIShopApiClientInterface;
  */
 class IAI implements IAIShopApiClientInterface
 {
-    /** @var string */
-    private $login;
-    /** @var string */
-    private $password;
-    /** @var string */
-    private $shop;
-    /** @var SoapClient */
-    private $iai_soap_client;
-    /** @var array */
-    private $response;
-    /** @var IAIParam */
-    private $iai_param;
-    /** @var IAIShopAuthentication */
-    private $iai_connection_data;
-    /** @var string */
-    private $gate;
-    /** @var string */
-    private $method;
+    private string $login;
+    private string $password;
+    private string $shop;
+    private IAISoapClient $iai_soap_client;
+    private array $response;
+    private IAIParam $iai_param;
+    private IAIShopAuthentication $iai_connection_data;
+    private string $gate;
+    private string $method;
 
     function __construct(
         string $shop,
