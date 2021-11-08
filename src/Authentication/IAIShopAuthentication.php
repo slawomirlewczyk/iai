@@ -7,14 +7,11 @@ namespace lewczyk\iai\src\Authentication;
  */
 class IAIShopAuthentication{
     
-    /** @var IAIShopAuthentication */
-    private static $connection_data;
-    /** @var string */
-    private $iai_login = '';
-    /** @var string */
-    private $iai_password = '';
-    /** @var string */
-    private $iai_shop_name = '';
+    private static IAIShopAuthentication $connection_data;
+    private string $iai_login = '';
+    private string $iai_password = '';
+    private string $iai_shop_name = '';
+    private int $iai_api_version = 150;
     
     /**
      * Disable constructing
@@ -68,6 +65,26 @@ class IAIShopAuthentication{
 
     public function setIAIShopName(string $iai_shop_name): void {
         $this->iai_shop_name = $iai_shop_name;
+    }
+
+    /**
+     * Get the value of iai_api_version
+     */ 
+    public function getIAIApiVersion()
+    {
+        return $this->iai_api_version;
+    }
+
+    /**
+     * Set the value of iai_api_version
+     *
+     * @return  self
+     */ 
+    public function setIAIApiVersion($iai_api_version)
+    {
+        $this->iai_api_version = $iai_api_version;
+
+        return $this;
     }
 }
 

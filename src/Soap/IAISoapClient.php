@@ -113,7 +113,7 @@ class IAISoapClient
     }
     private function setClient()
     {
-        $address = 'https://'.$this->connection_data->getIAIShopName().'.iai-shop.com/api/?gate='.$this->apiGate.'/'.$this->apiMethod.'/'.self::APIVERSION.'/soap';
+        $address = 'https://'.$this->connection_data->getIAIShopName().'.iai-shop.com/api/?gate='.$this->apiGate.'/'.$this->apiMethod.'/'.$this->connection_data->getIAIApiVersion().'/soap';
         $wsdl = $address . '/wsdl';
         $binding = array();
         $binding['location'] = $address;

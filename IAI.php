@@ -25,14 +25,15 @@ class IAI implements IAIShopApiClientInterface
     function __construct(
         string $shop,
         string $login,
-        string $password
+        string $password,
+        string $api_version
     ) {
         $this->login = $login;
         $this->password = $password;
         $this->shop = $shop;
         $this->iai_soap_client = new IAISoapClient();
         $this->iai_param = new IAIParam();
-        $this->setIAIConnectionData($login, $password, $shop);
+        $this->setIAIConnectionData($login, $password, $shop, $api_version);
     }
     /**
      * 
@@ -71,11 +72,13 @@ class IAI implements IAIShopApiClientInterface
      * @param string $login
      * @param string $password
      * @param string $shop
+     * @param string $api_version
      */
-    private function setIAIConnectionData(string $login, string $password, string $shop) {
+    private function setIAIConnectionData(string $login, string $password, string $shop, int $api_version) {
         $this->iai_connection_data = IAIShopAuthentication::getConnectionData();
         $this->iai_connection_data->setIAILogin($login);
         $this->iai_connection_data->setIAIPassword($password);
         $this->iai_connection_data->setIAIShopName($shop);
+        $this->iai_connection_data->getIAIApiVersion($api_version);
     }
 }
