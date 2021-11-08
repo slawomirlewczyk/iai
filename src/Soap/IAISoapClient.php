@@ -18,7 +18,7 @@ class IAISoapClient
     private IAIShopAuthentication $connection_data;
     private array $request;
     private array $response;
-    private int $resultNumberPage;
+    private int $resultNumberPage = 0;
     public IAIParam $params;
 
     /**
