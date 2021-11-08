@@ -9,11 +9,9 @@ use lewczyk\iai\src\Authentication\IAIShopAuthentication;
 /**
  * Make request to iai-shop.com via Soap
  * 
- * @property const APIVERSION iai-shop api version
  */
 class IAISoapClient
 {
-    const APIVERSION = 150;
     private \SoapClient $client;
     private string $apiGate;
     private string $apiMethod;
