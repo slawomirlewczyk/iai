@@ -53,7 +53,7 @@ class IAI implements IAIShopApiClientInterface
      * @param mixed $values
      * @return $this
      */
-    public function param(string $name, $values) {
+    public function param(string $name, $values):IAI {
         $this->iai_param->$name($values);
         return $this;
     }
@@ -62,9 +62,11 @@ class IAI implements IAIShopApiClientInterface
      * 
      * @return array
      */
-    public function all() {
+    public function all():array {
         $gate = $this->gate;
-        return $this->response = $this->iai_soap_client->$gate($this->method);
+        $this->response = $this->iai_soap_client->$gate($this->method);
+        $this->iai_soap_client->resetParams();
+        return $this->response;
     }
     
     /**
